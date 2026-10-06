@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>꧁༺ LAITH GAMING ༻꧂</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0; min-height:100vh; font-family:Arial,sans-serif;
+  background:radial-gradient(circle at 50% 10%,#18204a 0,#080a18 42%,#03040b 100%);
+  color:#fff; overflow-x:hidden;
+}
+body:before{
+  content:""; position:fixed; inset:-30%; pointer-events:none;
+  background:conic-gradient(from 0deg,transparent,#00eaff18,transparent,#8b5cff18,transparent);
+  animation:spin 12s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.header{text-align:center;padding:38px 16px 22px}
+.logo{
+  width:145px;height:145px;margin:auto;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;
+  background:radial-gradient(circle,#202a55 0 45%,#101735 46% 100%);
+  border:3px solid #00eaff;
+  box-shadow:0 0 18px #00eaff,0 0 55px #006eff88,inset 0 0 25px #00eaff55;
+  animation:float 3s ease-in-out infinite;
+}
+.logo:before,.logo:after{content:"";position:absolute;border-radius:50%;border:1px solid #8b5cff88;inset:-12px;animation:pulse 2s ease-in-out infinite}
+.logo:after{inset:-23px;border-color:#00eaff55;animation-delay:.7s}
+@keyframes pulse{50%{transform:scale(1.08);opacity:.35}}
+@keyframes float{50%{transform:translateY(-7px)}}
+.gamepad{font-size:66px;filter:drop-shadow(0 0 10px #00eaff)}
+.brand{
+  margin:27px 0 8px;font-size:30px;font-weight:900;letter-spacing:1px;
+  color:#fff;text-shadow:0 0 8px #00eaff,0 0 24px #8b5cff;
+}
+.subtitle{color:#9da8d4;font-size:14px}
+.container{width:min(680px,92%);margin:20px auto 45px}
+.card{
+  position:relative; margin:18px 0; padding:20px; border-radius:24px;
+  background:linear-gradient(145deg,#11172d,#090d1c);
+  border:1px solid #26325d; box-shadow:0 10px 30px #0008;
+  transition:.25s; overflow:hidden;
+}
+.card:hover{transform:translateY(-3px);border-color:#00eaff;box-shadow:0 0 25px #00eaff33}
+.card:before{content:"";position:absolute;right:-60px;top:-60px;width:150px;height:150px;border-radius:50%;background:#00eaff12}
+.game-img{
+  width:100%;height:190px;object-fit:cover;display:block;
+  border-radius:18px;margin-bottom:15px;
+  border:1px solid #334274;
+  box-shadow:0 0 22px #00eaff22;
+}
+h2{margin:4px 0 8px;font-size:21px}
+.desc{margin:0 0 16px;color:#aab3d2;line-height:1.6}
+.play{
+  display:block;text-align:center;text-decoration:none;color:#061018;
+  background:linear-gradient(90deg,#00eaff,#7c6cff);
+  padding:12px;border-radius:14px;font-weight:900;
+  box-shadow:0 0 18px #00eaff44;
+}
+.badge{display:inline-block;font-size:12px;color:#00eaff;border:1px solid #00eaff55;padding:4px 9px;border-radius:20px;margin-bottom:9px}
+footer{text-align:center;color:#596384;padding:10px 0 25px;font-size:12px}
+.clear{clear:both}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="logo"><div class="gamepad">🎮</div></div>
+  <div class="brand">꧁༺ 𝑳𝑨𝑰𝑻𝑯 𝑮𝑨𝑴𝑰𝑵𝑮 ༻꧂</div>
+  <div class="subtitle">🎮 عالم الألعاب الخاص بليث</div>
+</header>
+
+<main class="container">
+  <article class="card">
+    <img class="game-img" src="https://cdn.solo.to/user/a/67e5a2331df728_73181768.jpg" alt="Car Parking Multiplayer">
+    <span class="badge">سباق • قيادة</span>
+    <h2>Car Parking Multiplayer</h2>
+    <p class="desc">عالم مفتوح، قيادة، مواقف سيارات وتعديل السيارات.</p>
+    <a class="play" target="_blank" rel="noopener"
+       href="https://play.google.com/store/apps/details?id=com.olzhas.carparking.multyplayer">▶ العب الآن</a>
+    <div class="clear"></div>
+  </article>
+
+  <article class="card">
+    <img class="game-img" src="https://fastly.mwm-storage.mwmcdn.com/raw_files/85bf086d-0f50-40f4-9d86-17765bdc759c" alt="Car Simulator 2">
+    <span class="badge">محاكاة • عالم مفتوح</span>
+    <h2>Car Simulator 2</h2>
+    <p class="desc">قيادة في مدينة مفتوحة، سباقات، تطوير سيارات وتخصيصها.</p>
+    <a class="play" target="_blank" rel="noopener"
+       href="https://play.google.com/store/apps/details?id=com.oppanagames.car.simulator">▶ العب الآن</a>
+    <div class="clear"></div>
+  </article>
+</main>
+
+<footer>© 2026 LAITH GAMING</footer>
+</body>
+</html>
